@@ -1,0 +1,19 @@
+@mixin bg-theme {
+	background: linear-gradient(
+		89.68deg,
+		#00012e 0.34%,
+		#080a4a 24.13%,
+		#0e1057 41.78%,
+		#0d0f54 49.57%,
+		#0a0c4a 75.22%,
+		#040522 99.78%
+	);
+}
+@mixin text-styling {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 350;
+	background: linear-gradient(90deg, #ffffff 0%, #bebebe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
