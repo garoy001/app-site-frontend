@@ -81,8 +81,8 @@
 
 ### Project Show Page
 
-![project show page](/assets/images/ShowProject.png)
+![project show page](./assets/images/ShowProject.png)
 
 ### Project Creation Page
 
-![project add page](/assets/images/AddProject.png)
+![project add page](./assets/images/AddProject.png)
