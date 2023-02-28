@@ -5,7 +5,7 @@ const ProjectHome = (props) => {
 	return (
 		<div className="container-fluid my-bg-theme">
 			<div className="row title-row">
-				<div className="col text-style-1">hello</div>
+				<div className="col text-style-1">Projects</div>
 			</div>
 			<div className="row projects-row">
 				<div className="col-sm-2 col-0"></div>
