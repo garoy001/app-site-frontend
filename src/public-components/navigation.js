@@ -1,4 +1,4 @@
-import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
+import { BiHome } from 'react-icons/bi';
 
 import { Form } from 'react-router-dom';
 const Navigation = () => {
@@ -14,7 +14,7 @@ const Navigation = () => {
 					className="back-arrow"
 					style={{ fontSize: '2rem', display: 'flex', alignItems: 'center' }}
 				>
-					<BsFillArrowLeftSquareFill />
+					<BiHome />
 				</div>
 			</a>
 			<button
@@ -77,7 +77,10 @@ const Navigation = () => {
 						>
 							Add Project <span className="sr-only">(current)</span>
 						</a>
-						<div className="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div
+							className="dropdown-menu create-project-dropdown"
+							aria-labelledby="navbarDropdown"
+						>
 							<Form action="/create" method="post">
 								<input type="text" name="title" placeholder="Title" />
 								<input type="text" name="img" placeholder="Image URL" />

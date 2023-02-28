@@ -1,0 +1,42 @@
+@import '../../../../public-assets/styling/_mixins';
+.project-show {
+	.back-button {
+		p {
+			font-size: 1.5rem;
+			color: white;
+			text-decoration: underline;
+			&:hover {
+				cursor: pointer;
+				color: gray;
+			}
+		}
+	}
+	.show-row-image {
+		max-height: 30rem;
+		img {
+			max-height: 30rem;
+		}
+	}
+	.show-row-title {
+		min-height: 10%;
+		max-height: 20%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding: 2rem;
+		.show-title-text {
+			font-size: 4rem;
+			@include text-styling;
+		}
+	}
+	.show-row-links {
+		min-height: 10rem;
+		max-height: 40rem;
+		align-items: center;
+	}
+	.show-link-container {
+		.show-project-links {
+			margin: 2rem;
+		}
+	}
+}
