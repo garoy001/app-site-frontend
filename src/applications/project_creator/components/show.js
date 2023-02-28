@@ -4,9 +4,10 @@ import { useState } from 'react';
 import { Form } from 'react-router-dom';
 export function Show(props) {
 	const [isHidden, setIsHidden] = useState('hidden');
-	const id = props.objIndex + 1;
+	const id = props.info.id;
 	const url = '/project/' + id;
 	const handleClick = () => {
+		console.log(id + '<< id');
 		if (isHidden == 'hidden') {
 			setIsHidden('');
 		} else {
@@ -39,7 +40,7 @@ export function Show(props) {
 						type="text"
 						name="title"
 						placeholder="Title"
-						defaultValue={props.title}
+						defaultValue={props.info.title}
 					/>
 					<input
 						type="text"

@@ -22,6 +22,7 @@ export const createAction = async ({ request }) => {
 };
 
 export const updateAction = async ({ request, params }) => {
+	console.log('update action >>>> ');
 	const formData = await request.formData();
 	const id = params.id;
 	const updatedProject = {
@@ -30,6 +31,8 @@ export const updateAction = async ({ request, params }) => {
 		livelink: formData.get('livelink'),
 		gitlink: formData.get('gitlink'),
 	};
+	console.log('update action >>>> id= ' + id);
+	console.table(updatedProject);
 	await fetch(url + '/api/' + id + '/', {
 		method: 'put',
 		headers: {
