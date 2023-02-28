@@ -1,0 +1,27 @@
+.hidden {
+	display: none;
+}
+.card-header-icon {
+	color: white;
+
+	&:hover {
+		cursor: pointer;
+		color: gray;
+	}
+	font-size: 2rem;
+}
+.card-header-icon-container {
+	width: 100%;
+	text-align: end;
+	display: flex;
+	justify-content: end;
+}
+.card-header-icon-button {
+	background-color: transparent;
+	border: none;
+	max-width: 2rem;
+	padding: 0;
+	&:focus {
+		outline: none;
+	}
+}

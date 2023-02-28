@@ -16,7 +16,11 @@ const ProjectHome = (props) => {
 								console.log(projectObj);
 							}
 							return (
-								<Show info={projectObj[index]} className="card-card-card" />
+								<Show
+									info={projectObj[index]}
+									objIndex={index}
+									className="card-card-card"
+								/>
 							);
 						})}
 					</div>

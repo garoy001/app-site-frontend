@@ -7,7 +7,7 @@ export const projectsLoader = async () => {
 	return projects;
 };
 export const projectLoader = async ({ params }) => {
-	const response = await fetch(URL + '/api/' + useParams.id + '/');
+	const response = await fetch(URL + '/api/' + params.id + '/');
 	const project = await response.json();
 	return project;
 };
