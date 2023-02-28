@@ -6,7 +6,7 @@
 
 ## Live Links
 
-[Backend](https://project-api-9ejh.onrender.com) <br>
+[Backend](https://project-api-9ejh.onrender.com/api/) <br>
 [Frontend](https://app.gabrielroyce.com/project)
 
 ## GitHub Links
